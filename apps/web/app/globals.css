@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: #f4f6fb;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: #161d35;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 0.9rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+button.primary {
+  background: #2d7df4;
+  color: #ffffff;
+}
+
+button.warn {
+  background: #f04f4f;
+  color: #ffffff;
+}
+
+button.secondary {
+  background: #323e63;
+  color: #ffffff;
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+  background: #000;
+}
+
+.status {
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
+
+small {
+  color: #bcc6e2;
+}

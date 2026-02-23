@@ -1,0 +1,21 @@
+{
+  "name": "videofacelive",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace @videofacelive/web run dev",
+    "dev:backend": "npm --workspace @videofacelive/backend run dev",
+    "dev:controller": "npm --workspace @videofacelive/controller run start",
+    "dev:all": "concurrently -n WEB,BACKEND \"npm run dev:web\" \"npm run dev:backend\"",
+    "dev:stack": "concurrently -n WEB,BACKEND,CTRL \"npm run dev:web\" \"npm run dev:backend\" \"npm run dev:controller\"",
+    "build": "npm --workspace @videofacelive/web run build && npm --workspace @videofacelive/backend run build",
+    "start": "npm --workspace @videofacelive/backend run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
